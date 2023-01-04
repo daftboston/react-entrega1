@@ -1,8 +1,21 @@
-function UserCard({name, img, email, location}) {
-    <h2>{name}</h2>
-    <img src={img} alt="imagen persona " />
-    <h3>{email}</h3>
-    <h3>{location}</h3>
+const UserCard = ({dataUsers,color}) =>{
+    const {name, email, location, picture, phone} = dataUsers
+
+         
+    
+    
+   return( 
+    <div className="user-card" style={{backgroundColor: color}}>
+         <h2>{name.title} {name.first} {name.last} </h2>
+         <img className="img" src={picture.thumbnail} alt="" />
+        
+         <h3> <i className='bx bx-envelope'></i> {email}</h3>
+         <h3><i className='bx bxs-phone-call' ></i>{phone}</h3>
+         <h3><i className='bx bxs-location-plus' ></i> {location.city} {location.state} {location.country} </h3>
+    </div>
+    )
 }
 
 export default UserCard
+
+
