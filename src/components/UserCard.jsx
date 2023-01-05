@@ -7,6 +7,7 @@ const UserCard = ({dataUsers,color}) =>{
    return( 
     <div className="user-card" style={{backgroundColor: color}}>
          <h2>{name.title} {name.first} {name.last} </h2>
+         
          <img className="img" src={picture.thumbnail} alt="" />
         
          <h3> <i className='bx bx-envelope'></i> {email}</h3>

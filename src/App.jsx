@@ -24,11 +24,8 @@ function App() {
 
      <h1>tarjeta </h1>
         <div >
-        {
-          users.map((name,index)=> {
-            return <UserCard dataUsers={name} key = {`item-${index}`} color={colors [indice]}/>
-          })       
-        }
+        
+          <UserCard dataUsers={users [indice]}   color={colors [indice]}/>
         
         </div>
           
