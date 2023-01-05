@@ -17,15 +17,17 @@ function App() {
     setIndex (newRandom)
   }  
 
-  
+ 
 
   return (
-    <div className="App">
+    <div className="App"  style={{
+      backgroundColor: colors[indice],      
+    }}>
 
-     <h1>tarjeta </h1>
+     <h1>CARD </h1>
         <div >
         
-          <UserCard dataUsers={users [indice]}   color={colors [indice]}/>
+          <UserCard dataUsers={users [indice]}   color={colors [indice]} />
         
         </div>
           

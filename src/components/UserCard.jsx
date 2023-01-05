@@ -5,10 +5,10 @@ const UserCard = ({dataUsers,color}) =>{
     
     
    return( 
-    <div className="user-card" style={{backgroundColor: color}}>
+    <div className="user-card"  style={{color: color}}> 
          <h2>{name.title} {name.first} {name.last} </h2>
          
-         <img className="img" src={picture.thumbnail} alt="" />
+         <img className="img" src={picture.medium} alt="" />
         
          <h3> <i className='bx bx-envelope'></i> {email}</h3>
          <h3><i className='bx bxs-phone-call' ></i>{phone}</h3>
